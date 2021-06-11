@@ -8,7 +8,7 @@
 
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 import { GlobalStyle } from 'styles/global-styles';
 
@@ -18,21 +18,21 @@ import { useTranslation } from 'react-i18next';
 
 export function App() {
   const { i18n } = useTranslation();
-  return (
-    <BrowserRouter>
-      <Helmet
-        titleTemplate="%s - React Boilerplate"
-        defaultTitle="React Boilerplate"
-        htmlAttributes={{ lang: i18n.language }}
-      >
-        <meta name="description" content="A React Boilerplate application" />
-      </Helmet>
+  const location = useLocation();
 
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route component={NotFoundPage} />
+  return (
+    <React.Fragment>
+      <Helmet htmlAttributes={{ lang: i18n.language }}></Helmet>
+
+      <Switch location={location} key={location.key}>
+        <Route exact path={process.env.PUBLIC_URL + '/'}>
+          <HomePage />
+        </Route>
+        <Route>
+          <NotFoundPage />
+        </Route>
       </Switch>
       <GlobalStyle />
-    </BrowserRouter>
+    </React.Fragment>
   );
 }

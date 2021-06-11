@@ -26,4 +26,25 @@ export const GlobalStyle = createGlobalStyle`
     font-family: inherit;
     font-size: inherit;
   }
+
+  /* Works on Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #bfbfbf #ececec;
+  }
+
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ececec;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+    border-radius: 20px;
+    border: 3px solid #ececec;
+  }
 `;

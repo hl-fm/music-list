@@ -13,6 +13,7 @@
     "url": "https://github.com/hl-fm/music-list.git"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "1.4.0",
     "fontfaceobserver": "2.1.0",
     "i18next": "19.7.0",
     "i18next-browser-languagedetector": "6.0.1",
@@ -22,6 +23,7 @@
     "react-dom": "16.13.1",
     "react-helmet-async": "1.0.6",
     "react-i18next": "11.7.2",
+    "react-player": "2.9.0",
     "react-redux": "7.2.1",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
@@ -35,7 +37,6 @@
     "web-vitals": "0.2.4"
   },
   "devDependencies": {
-    "@reduxjs/toolkit": "1.4.0",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.0.2",
     "@types/fontfaceobserver": "0.0.6",
