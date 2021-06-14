@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
+import { VscDebugStart, VscDebugPause } from 'react-icons/vsc';
 
 interface MusicButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   play?: boolean;
@@ -20,7 +21,7 @@ const PlayButton: React.FunctionComponent<MusicButtonProps> = ({
       disabled={disabled}
       data-size={size}
     >
-      {play ? <span>⬜</span> : <span>▶</span>}
+      {play ? <VscDebugPause /> : <VscDebugStart />}
     </CircleButton>
   );
 };

@@ -23,6 +23,7 @@
     "react-dom": "16.13.1",
     "react-helmet-async": "1.0.6",
     "react-i18next": "11.7.2",
+    "react-icons": "4.2.0",
     "react-player": "2.9.0",
     "react-redux": "7.2.1",
     "react-router-dom": "5.2.0",
@@ -67,12 +68,12 @@
     "plop": "2.7.4",
     "prettier": "2.1.1",
     "rimraf": "3.0.2",
+    "serve": "11.3.2",
+    "shelljs": "0.8.4",
     "stylelint": "13.7.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-config-styled-components": "0.1.1",
-    "stylelint-processor-styled-components": "1.10.0",
-    "serve": "11.3.2",
-    "shelljs": "0.8.4"
+    "stylelint-processor-styled-components": "1.10.0"
   },
   "scripts": {
     "start": "react-scripts start",

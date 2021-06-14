@@ -14,6 +14,8 @@ import { Music } from 'store/musics/types';
 import { VolumeButton } from './VolumeButton';
 import { AboutModal } from './AboutModal';
 
+import { VscInfo, VscDebugRestart } from 'react-icons/vsc';
+
 const Background = styled.div`
   position: fixed;
   width: 100vw;
@@ -202,7 +204,7 @@ export const MusicCard: React.FunctionComponent = () => {
 
   const [playing, setPlay] = React.useState(false);
   const [loop, setLoop] = React.useState(false);
-  const [volume, setVolume] = React.useState(0.5);
+  const [volume, setVolume] = React.useState(0.4);
   const [url, setVideoUrl] = React.useState('');
 
   const [aboutModalShown, showAboutModal] = React.useState(false);
@@ -261,7 +263,7 @@ export const MusicCard: React.FunctionComponent = () => {
                 onClick={() => setLoop(value => !value)}
                 data-active={loop}
               >
-                <span>&#8634;</span>
+                <VscDebugRestart />
               </CircleButton>
             </ControlPanelLeftSection>
 
@@ -271,7 +273,7 @@ export const MusicCard: React.FunctionComponent = () => {
                 title="About this Website"
                 onClick={() => showAboutModal(true)}
               >
-                <span>i</span>
+                <VscInfo />
                 {/* info */}
               </CircleButton>
             </ControlPanelRightSection>

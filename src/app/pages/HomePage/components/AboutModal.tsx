@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { VscClose } from 'react-icons/vsc';
 import { CircleButton } from './PlayButton';
 
 const ModalSection = styled.section`
@@ -92,7 +93,7 @@ export const AboutModal: React.FunctionComponent<{
         <ModalContainer>
           <ModalHeader>
             <CloseModalButton title="Close" onClick={() => close()}>
-              <span>✕</span>
+              <VscClose />
             </CloseModalButton>
             {/* <h2>header</h2> */}
           </ModalHeader>

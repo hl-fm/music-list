@@ -1,13 +1,19 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
+import { VscUnmute, VscMute } from 'react-icons/vsc';
 import { CircleButton } from './PlayButton';
 
 const VolumeInputWrapper = styled.div`
   position: absolute;
-  top: -80px;
-  left: -50px;
+  top: -120px;
+  left: -70px;
+  width: 180px;
   visibility: ${props => (props.hidden ? 'collapse' : 'visible')};
-  transform: rotateZ(90deg);
+  transform: rotateZ(-90deg);
+  background-color: #757575;
+  padding: 5px 15px;
+  border-radius: 15px;
+  z-index: 1;
 `;
 
 export const VolumeButton: React.FunctionComponent<{
@@ -18,13 +24,19 @@ export const VolumeButton: React.FunctionComponent<{
 
   return (
     <CircleButton
+      style={{
+        position: 'relative',
+      }}
       title="Volume"
       onClick={() => setShowVolume(value => !value)}
       data-active={showVolume}
     >
-      <span>🔊</span>
+      {value === 0 ? <VscMute /> : <VscUnmute />}
       <VolumeInputWrapper hidden={!showVolume}>
         <input
+          style={{
+            width: '100%',
+          }}
           type="range"
           min="0"
           max="1"

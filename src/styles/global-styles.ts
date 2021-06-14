@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
   /* Works on Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: #bfbfbf #ececec;
+    scrollbar-color: #bfbfbf #757575;
   }
 
   /* Works on Chrome, Edge, and Safari */
@@ -39,12 +39,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   *::-webkit-scrollbar-track {
-    background: #ececec;
+    background: #757575;
   }
 
   *::-webkit-scrollbar-thumb {
     background-color: #bfbfbf;
     border-radius: 20px;
-    border: 3px solid #ececec;
+    border: 3px solid #757575;
   }
 `;
