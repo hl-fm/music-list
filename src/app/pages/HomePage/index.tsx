@@ -7,7 +7,7 @@ export function HomePage() {
     <>
       <Helmet>
         <title>My Hololive music collection</title>
-        <meta name="description" content="My Hololive music collection" />
+        <meta name="description" content="A Collection of my favorite MV" />
       </Helmet>
 
       <MusicCard />
