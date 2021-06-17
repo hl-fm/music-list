@@ -101,13 +101,13 @@ export const AboutModal: React.FunctionComponent<{
             <p>My collection of Hololive's music</p>
             <p>For research purpose</p>
             <p>
-              Background{' '}
+              Background Photo by Welmoed van der Meer on{' '}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://storyset.com/nature"
+                href="https://unsplash.com/photos/K26p-t8v3AY"
               >
-                Nature illustrations by Storyset
+                Unsplash
               </a>
             </p>
           </ModalContent>

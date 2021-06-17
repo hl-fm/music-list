@@ -26,7 +26,8 @@ const Background = styled.div`
   background-color: #bfbfbf;
   transition: all 0.5s ease-in-out;
   transition-delay: 0.5s;
-  background-image: url('/images/Forest-pana.svg');
+  /* background-image: url('https://source.unsplash.com/daily?nature'); */
+  background-image: url('https://source.unsplash.com/K26p-t8v3AY');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
